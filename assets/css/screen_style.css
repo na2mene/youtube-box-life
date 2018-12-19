@@ -1,0 +1,37 @@
+/* 
+ * ノーマライズ
+ * ================================ */
+ html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* 
+ * ページの背景色設定
+ * ================================ */
+body {
+  background-color: black;
+}
+
+/* 
+ * フォームの設定
+ * ================================ */
+#ScreenControllerForm {
+  padding: 70px;
+}
+
+/* 
+ * ビデオリストの設定
+ * ================================ */
+#videoList {
+  overflow: hidden;
+}
+
+/* 
+ * 選択時の背景色設定
+ * ================================ */
+.SelectedVideo {
+  background-color: gold;
+}
+
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Youtube Box Life</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./assets/vendor/uikit.css">
+    <link rel="stylesheet" href="./assets/vendor/uikit-rtl.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+  </head>
+	<body>
+
+    <!-- インジケータ -->
+    <div id="Indicator">
+      <!-- インジケータがちらつくため、DOM生成後すぐに隠す -->
+      <div id="SpinnerPosition" style="display: none;">
+        <div class="db-spinner"></div>
+      </div>
+    </div>
+
+    <!-- アプリケーション -->
+    <div id="Root">
+        <div id="ControllerButtonPosition">  
+          <button id="ScreenControllerBtn" type="button" class="uk-button uk-button-primary">Call up controller</button>
+          <button id="AppSettingBtn" type="button" class="uk-button uk-button-danger" disabled>Setting screen OK?</button>
+        </div>
+        <div id="Container"></div>
+        <div id="Blocker"></div>
+    </div>
+
+    <!-- スクリーンコントローラ -->
+    <iframe id="ScreenController" src="./screen_controller.html"></iframe>
+
+    <!-- スクリプトロード -->
+    <script src="./assets/vendor/three.js"></script>
+    <script src="./assets/vendor/TrackballControls.js"></script>
+    <script src="./assets/vendor/CSS3DRenderer.js"></script>
+    <script src="./assets/js/class/ScreenElement.js"></script>
+    <script src="./assets/js/App.js"></script>
+  </body>
+</html>

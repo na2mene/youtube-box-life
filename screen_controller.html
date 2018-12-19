@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja" id="a">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./assets/vendor/uikit.css">
+  <link rel="stylesheet" href="./assets/vendor/uikit-rtl.css">
+  <link rel="stylesheet" href="./assets/css/screen_style.css">
+  <title>ScreenControllerForm</title>
+</head>
+  <body id="body">
+    <form id="ScreenControllerForm">
+      <fieldset class="uk-fieldset">
+
+        <legend class="uk-legend">Youtube Data API</legend>
+
+        <p>
+          検索結果は、動画作成順の最大８件まで表示します。
+          (Up to 8 search results in the order of movie creation will be displayed.)
+        </p>
+
+        <div class="uk-margin">
+          <label>検索ワード(Search word)<label>
+          <input id="SearchWord" class="uk-input" type="text" placeholder="検索ワード(Search word)">
+        </div>
+
+        <div class="uk-margin">
+          <label>反映させるスクリーンを選択(Select the screen to be reflected)<label>
+          <select id="SelectScreen" class="uk-select">
+            <option value="1">メインセンタースクリーン(Main Center Screen)</option>
+            <option value="2">メインライトスクリーン(Main Right Screen)</option>
+            <option value="3">メインリバーススクリーン(Main Reverse Screen)</option>
+            <option value="4">メインレフトスクリーン(Main Left Screen)</option>
+            <option value="5">天井スクリーン(Main Top Screen)</option>
+            <option value="6">底面スクリーン(Main Bottom Screen)</option>
+          </select>
+        </div>
+
+        <div>
+          <button id="getMovieBtn" type="button" class="uk-button uk-button-primary">Come on Youtube!!</button>
+        </div>
+
+        <div id="VideoList" class="uk-margin">
+        </div>
+      </fieldset>
+    </form>
+
+    <script src="./assets/js/class/ScreenElement.js"></script>
+    <script src="./assets/js/ScreenApp.js"></script>
+
+  </body>
+</html>
